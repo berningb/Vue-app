@@ -1,15 +1,27 @@
+
 <template>
-  <main-layout>
-    <p>Welcome home</p>
-  </main-layout>
+  <div>
+    <nav-bar></nav-bar>
+  </div>  
 </template>
 
 <script>
-  import MainLayout from '../layouts/Main.vue'
+  import NavBar from '../layouts/Nav.vue'
 
   export default {
-    components: {
-      MainLayout
-    }
+    components: { 
+      NavBar
+    },
+    data () {
+      return {
+      }
+    },
   }
 </script>
+
+
+<style>
+  body.home {
+    background: #20212C
+  }
+</style>

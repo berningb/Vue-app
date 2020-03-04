@@ -14,6 +14,9 @@ const app = new Vue({
         : require('./pages/404.vue')
     }
   },
+  beforeCreate: function() {
+    document.body.style = 'background: #20212C';
+  },
   render (h) {
     return h(this.ViewComponent)
   }
